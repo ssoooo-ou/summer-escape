@@ -1,0 +1,42 @@
+{
+  "appVersion" : "1.4.37",
+  "appBuild" : "201",
+  "packageFormatVersion" : "1.21",
+  "version" : 1,
+  "type" : "dataExport",
+  "createdAt" : "2026-06-26T08:06:20Z",
+  "items" : [
+    {
+      "subtype" : 0,
+      "id" : "6716AB5A91C04E0384FBC2F8ABD30261",
+      "parentId" : "",
+      "name" : "第二章2.2  简单线性模型参数估计",
+      "isDrawing" : true,
+      "relativePath" : "\/第二章2.2 简单线性模型参数估计.pdf"
+    },
+    {
+      "subtype" : 0,
+      "id" : "804E122177FE447EA4D90DDA56DAF07A",
+      "parentId" : "",
+      "name" : "第三章 多元线性模型",
+      "isDrawing" : true,
+      "relativePath" : "\/第三章 多元线性模型.pdf"
+    },
+    {
+      "subtype" : 0,
+      "id" : "0257CF2FCE9B4A62939CF37E3ED22ECB",
+      "parentId" : "",
+      "name" : "第二章2.1 回归分析概述",
+      "isDrawing" : true,
+      "relativePath" : "\/第二章2.1 回归分析概述.pdf"
+    },
+    {
+      "subtype" : 0,
+      "id" : "CF89FA803B1F417F919C3DA36E90C2E4",
+      "parentId" : "",
+      "name" : "第二章2.3简单线性回归模型的统计检验",
+      "isDrawing" : true,
+      "relativePath" : "\/第二章2.3简单线性回归模型的统计检验.pdf"
+    }
+  ]
+}

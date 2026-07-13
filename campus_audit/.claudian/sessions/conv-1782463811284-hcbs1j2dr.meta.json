@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782463811284-hcbs1j2dr",
+  "providerId": "claude",
+  "title": "Start learning Chapter 2",
+  "titleGenerationStatus": "success",
+  "createdAt": 1782463811288,
+  "updatedAt": 1782823875942,
+  "lastResponseAt": 1782823875942,
+  "sessionId": "20efe740-9016-49d0-a868-cf65133c6358",
+  "providerState": {
+    "providerSessionId": "20efe740-9016-49d0-a868-cf65133c6358"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 19704,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 109184,
+    "contextWindow": 200000,
+    "contextTokens": 128888,
+    "percentage": 64,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "markdown-importer:open": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "'"
+    }
+  ],
+  "canvas:export-as-image": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(curl -L -o \"华鑫证券_统联精密_MIM领先企业_260111.pdf\" \"http://www.sdyanbao.com/detail/941192\" --max-time 30 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -s \"https://s.askci.com/stock/financialreport/688210/financefile/\" --max-time 15)",
+      "Bash(curl -L -o \"统联精密_2025年年度报告.pdf\" \"http://notice.10jqka.com.cn/api/pdf/edcab1e08eea1898.pdf\" -H \"Referer: https://s.askci.com/\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -o \"统联精密_2023年年度报告.pdf\" \"http://notice.10jqka.com.cn/api/pdf/80aa6b9a79daac10.pdf\" -H \"Referer: https://s.askci.com/\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -o \"统联精密_2022年年度报告.pdf\" \"http://notice.10jqka.com.cn/api/pdf/fe8598f4237792a3.pdf\" -H \"Referer: https://s.askci.com/\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -o \"统联精密_2021年年度报告.pdf\" \"http://notice.10jqka.com.cn/api/pdf/931151a759341597.pdf\" -H \"Referer: https://s.askci.com/\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -o \"统联精密_2025年年度报告.pdf\" \"https://notice.10jqka.com.cn/api/pdf/edcab1e08eea1898.pdf\" -H \"Referer: https://s.askci.com/\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -k -o \"统联精密_2025年年度报告.pdf\" \"https://notice.10jqka.com.cn/api/pdf/edcab1e08eea1898.pdf\" -H \"Referer: https://s.askci.com/\" -H \"User-Agent: Mozilla/5.0\" --max-time 60 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(curl -L -o \"统联精密_2025年年度报告_v2.pdf\" \"https://data.eastmoney.com/notices/detail/688210/AN202604251661803050.html\" --max-time 30 -s -w \"HTTP %{http_code} Size: %{size_download}\")",
+      "Bash(python -c \"import docx; print\\('python-docx', docx.__version__\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('d:/CPA2班管理学泡菜问题作业/financial-analyst/format_word.py', doraise=True\\); print\\('语法检查通过'\\)\")",
+      "Bash(python format_word.py \"_排版测试_源.docx\")",
+      "Bash(python -c ' *)",
+      "Bash(python format_word.py \"统联精密深度估值与财务基本面研究报告.docx\")",
+      "PowerShell(pip install pymupdf 2>&1)",
+      "PowerShell(python -c \"import fitz; doc = fitz.open\\('d:/CPA2�����ѧ�ݲ�������ҵ/financial-analyst/�Ա���ֵ.pdf'\\); print\\('Pages:', doc.page_count\\); [print\\(f'===Page {i+1}===\\\\n' + doc[i].get_text\\(\\)[:3000]\\) for i in range\\(min\\(3, doc.page_count\\)\\)]\")",
+      "Read(//d/软件/PythonProject-VIBE/.claude/skills/frontend-slides/**)",
+      "Bash(npx vercel *)",
+      "Bash(where vercel *)",
+      "Bash(npm install *)",
+      "Bash(vercel whoami *)",
+      "Bash(python3 -c ' *)",
+      "Bash(git init *)"
+    ]
+  }
+}

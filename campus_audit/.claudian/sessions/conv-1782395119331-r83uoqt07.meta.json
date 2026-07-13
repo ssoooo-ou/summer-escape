@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782395119331-r83uoqt07",
+  "providerId": "claude",
+  "title": "Answer question about model identity",
+  "titleGenerationStatus": "success",
+  "createdAt": 1782395119359,
+  "updatedAt": 1782964823595,
+  "lastResponseAt": 1782964823595,
+  "sessionId": "f0a3b800-4cab-44cf-8e94-02f142a931d5",
+  "providerState": {
+    "providerSessionId": "f0a3b800-4cab-44cf-8e94-02f142a931d5"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2318,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 79232,
+    "contextWindow": 200000,
+    "contextTokens": 81550,
+    "percentage": 41,
+    "contextWindowIsAuthoritative": true
+  }
+}

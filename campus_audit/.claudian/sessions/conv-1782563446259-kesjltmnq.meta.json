@@ -1,0 +1,23 @@
+{
+  "id": "conv-1782563446259-kesjltmnq",
+  "providerId": "claude",
+  "title": "Summarize 毛概 exam review points by chapter",
+  "titleGenerationStatus": "success",
+  "createdAt": 1782563446260,
+  "updatedAt": 1782957687883,
+  "lastResponseAt": 1782957687883,
+  "sessionId": "254d3e19-189c-4eee-bf67-7a960602b5c8",
+  "providerState": {
+    "providerSessionId": "254d3e19-189c-4eee-bf67-7a960602b5c8"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 949,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 114688,
+    "contextWindow": 200000,
+    "contextTokens": 115637,
+    "percentage": 58,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"73a928ac01fd2ec2","type":"text","text":"# 计量第二章：一元线性回归","x":-1090,"y":-200,"width":370,"height":120},
+		{"id":"7d4391576c8d6868","type":"text","text":"# 由Var(B1 hat)到检验\n## Var(B1 hat)作用![[Pasted image 20260626220939.png]]","x":-360,"y":-660,"width":1180,"height":580,"color":"6"},
+		{"id":"b58936da5b8b87fe","type":"text","text":"# OLS的推导及T检验\n## 考试套路：给你 SSE、n、Σxᵢ² → 算 σ̂² → 算 Var(β̂₁) → 算 SE(β̂₁) → 算 t 统计量 → 做 t 检验\n## OLS的推导\n![[Pasted image 20260626224134.png|653]]\n## 评价有效性\n![[Pasted image 20260626225730.png]]","x":-345,"y":173,"width":1150,"height":1600},
+		{"id":"15c73df04bdf389c","type":"text","text":"# 变量解释\n\n| ei                                   | 残差         | 样本模型 | Y被Y hat 解释后剩下的 |\n| ------------------------------------ | ---------- | ---- | -------------- |\n| epsilon、u                            | 随机误差项      | 总体模型 | y被x解释后剩下的部分    |\n| ![[Pasted image 20260626215654.png]] |            |      |                |\n| sigma                                | 总体随机误差项标准差 | 总体   | 未知             |\n| sigma^2 hat                          | 样本估计值      | 样本模型 | 我们可以算的         |\n| ![[Pasted image 20260626215623.png]] |            |      |                |\n\t\n\n","x":-2160,"y":-570,"width":960,"height":800},
+		{"id":"824c31795a50de50","type":"text","text":"# T检验\n# R^2 检验\n![[Pasted image 20260627230405.png]]\n\n\n","x":-1120,"y":287,"width":617,"height":387},
+		{"id":"b1f26224e066204f","type":"text","text":"# 基础入门","x":-1680,"y":320,"width":233,"height":90}
+	],
+	"edges":[
+		{"id":"53a9a5b9c4cad6fd","fromNode":"b1f26224e066204f","fromSide":"right","toNode":"15c73df04bdf389c","toSide":"left"},
+		{"id":"2ccbbb36f588f037","fromNode":"73a928ac01fd2ec2","fromSide":"right","toNode":"7d4391576c8d6868","toSide":"left"},
+		{"id":"49cb90a9676a1e96","fromNode":"73a928ac01fd2ec2","fromSide":"right","toNode":"b58936da5b8b87fe","toSide":"left"},
+		{"id":"484b4a43eecf7694","fromNode":"73a928ac01fd2ec2","fromSide":"right","toNode":"824c31795a50de50","toSide":"top"}
+	]
+}

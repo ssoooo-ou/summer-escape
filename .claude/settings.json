@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(code --list-extensions --show-versions)",
+      "Read(//c/Users/11324/.vscode/extensions/bioinfo.markitdown-vscode-0.3.1/**)",
+      "Bash(mkdir -p \"d:/CPA2班管理学泡菜问题作业/financial-analyst/笔记-高财\")",
+      "Bash(cat ~/.cc-connect/sessions/financial-analyst_52fdbef1.json 2>/dev/null | head -100)",
+      "Read(//c/Users/11324/.cc-connect/sessions/**)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//d/软件/PythonProject-VIBE/.claude/skills/beautifel-html/templates/editorial-tri-tone/**)",
+      "Bash(python app.py)",
+      "Read(//d/软件/PythonProject-VIBE/.claude/skills/frontend-slides/**)"
+    ],
+    "additionalDirectories": [
+      "d:\\CPA2班管理学泡菜问题作业\\financial-analyst"
+    ]
+  }
+}
