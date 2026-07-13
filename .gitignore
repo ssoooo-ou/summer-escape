@@ -1,0 +1,23 @@
+# 隐藏需求文档
+需求文档-暑假出游邀请网页.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+
+# 本地数据库
+data.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
