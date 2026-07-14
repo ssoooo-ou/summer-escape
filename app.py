@@ -60,13 +60,15 @@ def get_conn():
     if USE_POSTGRES:
         db_url = os.environ["DATABASE_URL"]
         parsed = urllib.parse.urlparse(db_url)
-        return pg8000.native.Connection(
+        conn = pg8000.native.Connection(
             user=parsed.username,
             password=parsed.password,
             host=parsed.hostname,
             port=parsed.port or 5432,
             database=parsed.path[1:] if parsed.path else None
         )
+        conn.autocommit = True
+        return conn
     else:
         conn = sqlite3.connect(DATABASE, detect_types=sqlite3.PARSE_DECLTYPES)
         conn.row_factory = sqlite3.Row
