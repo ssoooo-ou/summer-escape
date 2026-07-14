@@ -134,8 +134,8 @@ def create_invitation():
     inv_id = uuid.uuid4().hex[:8]
     db = get_db()
     if USE_POSTGRES:
-        db.run("INSERT INTO invitation (id) VALUES (%s)", (inv_id,))
-        db.run("INSERT INTO plan (invitation_id, data) VALUES (%s, %s)",
+        db.run("INSERT INTO invitation (id) VALUES ($1)", (inv_id,))
+        db.run("INSERT INTO plan (invitation_id, data) VALUES ($1, $2)",
                (inv_id, json.dumps(default_plan(), ensure_ascii=False)))
     else:
         db.execute("INSERT INTO invitation (id) VALUES (?)", (inv_id,))
@@ -149,10 +149,10 @@ def create_invitation():
 def accept_invitation(inv_id):
     db = get_db()
     if USE_POSTGRES:
-        rows = db.run("SELECT id FROM invitation WHERE id = %s", (inv_id,))
+        rows = db.run("SELECT id FROM invitation WHERE id = $1", (inv_id,))
         if not rows:
             return jsonify({"error": "not found"}), 404
-        db.run("UPDATE invitation SET status = 'accepted', accepted_at = NOW() WHERE id = %s", (inv_id,))
+        db.run("UPDATE invitation SET status = 'accepted', accepted_at = NOW() WHERE id = $1", (inv_id,))
     else:
         cur = db.execute("SELECT id FROM invitation WHERE id = ?", (inv_id,))
         if not cur.fetchone():
@@ -167,7 +167,7 @@ def accept_invitation(inv_id):
 def get_plan(inv_id):
     db = get_db()
     if USE_POSTGRES:
-        rows = db.run("SELECT data, updated_at FROM plan WHERE invitation_id = %s", (inv_id,))
+        rows = db.run("SELECT data, updated_at FROM plan WHERE invitation_id = $1", (inv_id,))
         if not rows:
             return jsonify({"error": "not found"}), 404
         cols = [c["name"] for c in db.columns]
@@ -184,10 +184,10 @@ def update_plan(inv_id):
     db = get_db()
     new_data = request.get_json(force=True)
     if USE_POSTGRES:
-        rows = db.run("SELECT id FROM plan WHERE invitation_id = %s", (inv_id,))
+        rows = db.run("SELECT id FROM plan WHERE invitation_id = $1", (inv_id,))
         if not rows:
             return jsonify({"error": "not found"}), 404
-        db.run("UPDATE plan SET data = %s, updated_at = NOW() WHERE invitation_id = %s",
+        db.run("UPDATE plan SET data = $1, updated_at = NOW() WHERE invitation_id = $2",
                (json.dumps(new_data, ensure_ascii=False), inv_id))
     else:
         cur = db.execute("SELECT id FROM plan WHERE invitation_id = ?", (inv_id,))
