@@ -218,6 +218,12 @@ def setup_view(inv_id):
 
 # ── 启动 ───────────────────────────────────────────────────
 
+# Gunicorn 启动时也会执行这里，确保数据库表已创建
+try:
+    init_db()
+except Exception:
+    pass  # 环境变量未就绪时跳过，由 __main__ 再试
+
 if __name__ == "__main__":
     init_db()
     print("Summer Escape Plan 2 - Backend started")
