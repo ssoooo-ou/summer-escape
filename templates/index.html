@@ -1548,10 +1548,19 @@ function expandAndGoToConfirm(btn) {
 function goToConfirm() {
   if (ROLE === 'sol' && !INV_ID) {
     // Create invitation first, then proceed
-    createInvitation().then(data => {
-      window.history.replaceState(null, '', '/setup/' + data.id);
-      window.location.reload();
-    });
+    createInvitation()
+      .then(data => {
+        if (!data.id) {
+          alert('创建邀请失败：' + JSON.stringify(data));
+          return;
+        }
+        window.history.replaceState(null, '', '/setup/' + data.id);
+        window.location.reload();
+      })
+      .catch(err => {
+        alert('创建邀请出错：' + err.message);
+        console.error(err);
+      });
     return;
   }
   deckStage.goTo(2);  // Invitation → Confirm page
